@@ -33,8 +33,9 @@ A modern full-stack web application built with cutting-edge technologies using *
 │   │   └── input.css  # Tailwind CSS 4 directives
 │   ├── client.tsx     # React entry point
 │   └── index.ts       # ElysiaJS server with mixed routes
-├── public/            # Static files
-│   ├── index.html     # Main HTML file
+├── public/            # Static HTML (committed to git)
+│   └── index.html     # Main HTML file
+├── dist/              # Built assets (ignored by git, generated during CI/CD)
 │   ├── styles/        # Compiled CSS
 │   └── js/           # Compiled JavaScript
 ├── package.json       # Dependencies and scripts

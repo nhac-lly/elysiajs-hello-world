@@ -7,7 +7,7 @@ const app = new Elysia()
   .use(swagger())
   .use(staticPlugin())
   .get("/", () => {
-    return new Response(Bun.file("dist/index.html"));
+    return new Response(Bun.file("public/index.html"));
   })
   .post("/hello", () => ({ message: "Hello from ElysiaJS!" }))
   .post("/test", () => ({ message: "Test endpoint" }))
